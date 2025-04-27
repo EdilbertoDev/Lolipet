@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolipet - Tudo para seu Pet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <a href="#home" style="color: white; text-decoration: none;">Lolipet</a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#banho-tosa">Banho & Tosa</a></li>
+                    <li><a href="#clinica">Clínica</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar produtos..." autocomplete="off">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                <a href="#login"><i class="fas fa-user"></i></a>
+                <a href="#carrinho"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Banner Principal -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tudo que seu pet precisa em um só lugar</h1>
+                <p>Produtos de qualidade e serviços especializados para o bem-estar do seu animal de estimação</p>
+                <a href="#produtos" class="btn">Conheça nossos produtos</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Destaques -->
+    <section class="featured" id="produtos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Produtos em Destaque</h2>
+                <p>Confira nossos produtos mais populares para o cuidado do seu pet</p>
+            </div>
+            
+            <div class="featured-grid" id="productsGrid">
+                <!-- Produto 1 -->
+                <div class="featured-item" data-name="ração premium para cães" data-category="ração" data-description="ração super premium para cães adultos de todas as raças">
+                    <div class="featured-img">
+                        <img src="https://petcaesecia.fbitsstatic.net/img/p/golden-mega-para-caes-adultos-de-grande-porte-sabor-frango-e-arroz-82964/267777-1.jpg?w=1200&h=1200&v=no-change&qs=ignore" alt="Ração Premium">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Ração Premium</h3>
+                        <p>Ração super premium para cães adultos de todas as raças</p>
+                        <div class="price">R$ 149,90</div>
+                        <a href="#produto1" class="btn" style="padding: 8px 15px; display: inline-block; margin-top: 10px;">Comprar</a>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="featured-item" data-name="brinquedo para gatos" data-category="brinquedo" data-description="brinquedo interativo com penas para entreter seu felino">
+                    <div class="featured-img">
+                        <img src="https://images.tcdn.com.br/img/img_prod/668761/brinquedo_varinha_com_bolinha_e_penas_para_gato_951_1_f07dd55fd7ac3a568d8641516886cbab_20230222112948.png" alt="Brinquedo">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Brinquedo para Gatos</h3>
+                        <p>Brinquedo interativo com penas para entreter seu felino</p>
+                        <div class="price">R$ 39,90</div>
+                        <a href="#produto2" class="btn" style="padding: 8px 15px; display: inline-block; margin-top: 10px;">Comprar</a>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="featured-item" data-name="coleira antipulgas" data-category="acessório" data-description="coleira com proteção contra pulgas e carrapatos por 8 meses">
+                    <div class="featured-img">
+                        <img src="https://images.unsplash.com/photo-1591946614720-90a587da4a36?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coleira">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Coleira Antipulgas</h3>
+                        <p>Coleira com proteção contra pulgas e carrapatos por 8 meses</p>
+                        <div class="price">R$ 89,90</div>
+                        <a href="#produto3" class="btn" style="padding: 8px 15px; display: inline-block; margin-top: 10px;">Comprar</a>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="featured-item" data-name="petisco natural" data-category="petisco" data-description="petisco 100% natural sem conservantes para cães">
+                    <div class="featured-img">
+                        <img src="https://img.irroba.com.br/fit-in/2000x2000/filters:fill(fff):quality(80)/brincalh/catalog/petiscos/biscoitos-naturais/biscoito-leite/frente-biscoito-leite.jpg" alt="Petisco">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Petisco Natural</h3>
+                        <p>Petisco 100% natural sem conservantes para cães</p>
+                        <div class="price">R$ 24,90</div>
+                        <a href="#produto4" class="btn" style="padding: 8px 15px; display: inline-block; margin-top: 10px;">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Serviços -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos os melhores serviços para garantir a saúde e bem-estar do seu pet</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Serviço 1 -->
+                <div class="service-item" id="banho-tosa">
+                    <div class="service-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Banho & Tosa</h3>
+                    <p>Banho completo com produtos de qualidade e tosa profissional</p>
+                    <a href="https://wa.me/5591993248459" class="btn" style="padding: 8px 20px; font-size: 14px;">Agendar</a>
+                </div>
+                
+                <!-- Serviço 2 -->
+                <div class="service-item" id="clinica">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Clínica Veterinária</h3>
+                    <p>Consultas, exames e vacinas com profissionais especializados</p>
+                    <a href="https://wa.me/5591993248459" class="btn" style="padding: 8px 20px; font-size: 14px;">Agendar</a>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Venda de Produtos</h3>
+                    <p>Produtos pensados para o bem-estar, alegria e saúde do seu pet!</p>
+                    <a href="https://wa.me/5591993248459" class="btn" style="padding: 8px 20px; font-size: 14px;">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Sobre o Loli Pet">
+            </div>
+            
+            <div class="about-content">
+                <h2>Sobre o Lolipet</h2>
+                <p>Fundado em 2025, o Lolipet nasceu do amor pelos animais e da vontade de oferecer produtos e serviços de qualidade para os pets e seus tutores.</p>
+                <p>Nossa equipe é formada por profissionais apaixonados por animais e comprometidos com o bem-estar dos seus melhores amigos.</p>
+                <p>Além de uma ampla variedade de produtos, oferecemos serviços especializados como consultas veterinárias e banho e tosa.</p>
+                <a href="#equipe" class="btn">Conheça nossa equipe</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que dizem nossos clientes</h2>
+                <p>Veja a opinião de quem já utilizou nossos produtos e serviços</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-item">
+                    <p>"Meu cachorro adora o banho no Lolipet! A equipe é muito atenciosa e os produtos que usam deixam seu pelo macio e cheiroso."</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ana Silva">
+                        </div>
+                        <div>
+                            <div class="client-name">Ana Silva</div>
+                            <div>Tutora do Thor</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="testimonial-item">
+                    <p>"Sempre compro as rações aqui. A qualidade é excelente e meu gato nunca teve problemas de saúde. Recomendo!"</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Oliveira">
+                        </div>
+                        <div>
+                            <div class="client-name">Carlos Oliveira</div>
+                            <div>Tutor do Loki</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="testimonial-item">
+                    <p>"A veterinária do Lolipet salvou a vida da minha cachorrinha quando ela teve uma infecção. Sou eternamente grato!"</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Mariana Costa">
+                        </div>
+                        <div>
+                            <div class="client-name">Mariana Costa</div>
+                            <div>Tutora da Mel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="section-title">
+                <h2>Receba nossas ofertas</h2>
+                <p>Cadastre-se para receber promoções e dicas de cuidados com seu pet</p>
+            </div>
+            
+            <form class="newsletter-form" id="newsletter">
+                <input type="email" placeholder="Digite seu melhor e-mail" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1 -->
+                <div class="footer-col">
+                    <h3>Lolipet</h3>
+                    <p>O melhor pet shop da região, oferecendo produtos de qualidade e serviços especializados para seu animal de estimação.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/lolipet.shop" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5591993248459" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#banho-tosa">Banho & Tosa</a></li>
+                        <li><a href="#clinica">Clínica Veterinária</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3 -->
+                <div class="footer-col">
+                    <h3>Horário de Funcionamento</h3>
+                    <ul>
+                        <li>Segunda a Sexta: 8h às 18h</li>
+                        <li>Sábado: 9h às 16h</li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 4 -->
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/cYGTiZheaCtfCxTG9" target="_blank">R. Antônio Barreto, 344 - Umarizal, Belém - PA, 66055-050</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+55913118-6010">(91) 3118-6010</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contato@petlider.com.br">contato@lolipet.com.br</a></li>
+                        <li><i class="fas fa-whatsapp"></i> <a href="https://wa.me/5591993248459" target="_blank"> (91) 993248459</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lolipet - Todos os direitos reservados </p>
+                <p>Desenvolvido por <a style="color: white;" href="https://wa.me/5591998050691" target="_blank">EMARCET</a></p> 
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
